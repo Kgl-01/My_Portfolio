@@ -1,6 +1,6 @@
 import stylexPlugin from "@stylexjs/rollup-plugin"
 import path from "path"
-import react from "@vitejs/plugin-react"
+import babel from "@rollup/plugin-babel"
 
 const config = {
   input: "./src/main.jsx",
@@ -26,7 +26,10 @@ const config = {
         rootDir: path.resolve(),
       },
     }),
-    react(),
+    babel({
+      presets: ["@babel/preset-react"],
+      babelHelpers: "bundled",
+    }),
   ],
 }
 

@@ -15,6 +15,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@rollup/plugin-babel": "^6.0.4",
     "@stylexjs/babel-plugin": "^0.6.0",
     "@stylexjs/rollup-plugin": "^0.6.0",
     "@types/react": "^18.2.66",
