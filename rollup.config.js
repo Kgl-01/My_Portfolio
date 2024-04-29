@@ -7,7 +7,7 @@ import image from "@rollup/plugin-image"
 const config = {
   input: "./src/main.jsx",
   output: {
-    file: "./.build/bundle.js",
+    file: "./dist/bundle.js",
     format: "es",
   },
   // Ensure that the stylex plugin is used before Babel
@@ -39,7 +39,7 @@ const config = {
     image(),
   ],
 
-  external: ["react", "react-dom/client"],
+  external: ["react", "react-dom/client", "@stylexjs/stylex"],
 }
 
 export default config
