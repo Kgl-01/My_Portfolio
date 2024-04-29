@@ -1,6 +1,7 @@
 import stylexPlugin from "@stylexjs/rollup-plugin"
 import path from "path"
 import babel from "@rollup/plugin-babel"
+import postcss from "rollup-plugin-postcss"
 
 const config = {
   input: "./src/main.jsx",
@@ -30,7 +31,13 @@ const config = {
       presets: ["@babel/preset-react"],
       babelHelpers: "bundled",
     }),
+    postcss({
+      extract: true,
+      minimize: true,
+    }),
   ],
+
+  external: ["react", "react-dom/client"],
 }
 
 export default config
