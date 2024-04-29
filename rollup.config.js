@@ -2,7 +2,7 @@ import stylexPlugin from "@stylexjs/rollup-plugin"
 import path from "path"
 
 const config = {
-  input: "./index.js",
+  input: "./main.jsx",
   output: {
     file: "./.build/bundle.js",
     format: "es",
