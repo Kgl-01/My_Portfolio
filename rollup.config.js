@@ -2,6 +2,7 @@ import stylexPlugin from "@stylexjs/rollup-plugin"
 import path from "path"
 import babel from "@rollup/plugin-babel"
 import postcss from "rollup-plugin-postcss"
+import image from "@rollup/plugin-image"
 
 const config = {
   input: "./src/main.jsx",
@@ -35,6 +36,7 @@ const config = {
       extract: true,
       minimize: true,
     }),
+    image(),
   ],
 
   external: ["react", "react-dom/client"],
