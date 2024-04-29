@@ -7,14 +7,14 @@ import image from "@rollup/plugin-image"
 const config = {
   input: "./src/main.jsx",
   output: {
-    file: "./.build/bundle.js",
+    file: "./dist/bundle.js",
     format: "es",
   },
   // Ensure that the stylex plugin is used before Babel
   plugins: [
     stylexPlugin({
       // Required. File path for the generated CSS file.
-      fileName: "./build/stylex.css",
+      fileName: "./dist/stylex.css",
       // default: false
       dev: false,
       // prefix for all generated classNames
