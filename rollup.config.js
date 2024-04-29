@@ -14,7 +14,7 @@ const config = {
   plugins: [
     stylexPlugin({
       // Required. File path for the generated CSS file.
-      fileName: "./.build/stylex.css",
+      fileName: "./build/stylex.css",
       // default: false
       dev: false,
       // prefix for all generated classNames
